@@ -79,6 +79,8 @@ main {
   color: var(--color-accent);
 }
 
+/* глобальный сброс удалён, чтобы не ломать навигацию */
+
 @media (max-width: 768px) {
   .section-title {
     font-size: 1.8rem;
