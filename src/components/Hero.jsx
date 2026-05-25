@@ -3,10 +3,10 @@ import './Hero.css';
 function Hero() {
   return (
     <section className="hero" id="hero">
-      {/* Фоновое изображение */}
+      {/* Локальное фоновое изображение */}
       <div className="hero__bg">
         <img
-          src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=1920&q=80"
+          src="/images/photo123.avif"
           alt="Контейнерный порт"
           loading="eager"
         />
@@ -15,7 +15,13 @@ function Hero() {
 
       <div className="hero__content container">
         <div className="hero__text">
-          <span className="hero__badge">🇨🇳 Прямые поставки из Китая</span>
+          <span className="hero__badge">
+            <svg className="hero__flag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20">
+              <rect width="30" height="20" fill="#DE2910"/>
+              <path d="M15 3L16.5 8H22L17.5 11.5L19 17L15 13L11 17L12.5 11.5L8 8H13.5Z" fill="#FFDE00"/>
+            </svg>
+            Прямые поставки из Китая
+          </span>
           <h1 className="hero__title">
             Доставим <span className="accent-text">любые товары</span> и комплектующие из Китая в Россию
           </h1>
@@ -26,17 +32,13 @@ function Hero() {
           <div className="hero__cta">
             <button
               className="btn btn--primary"
-              onClick={() =>
-                document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })
-              }
+              onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
             >
               Оставить заявку
             </button>
             <button
               className="btn btn--outline"
-              onClick={() =>
-                document.getElementById('catalog').scrollIntoView({ behavior: 'smooth' })
-              }
+              onClick={() => document.getElementById('catalog').scrollIntoView({ behavior: 'smooth' })}
             >
               Смотреть каталог
             </button>
@@ -57,14 +59,13 @@ function Hero() {
           </div>
         </div>
 
-        {/* Видео-вставки */}
         <div className="hero__videos">
           <div className="hero__video-card">
             <div className="hero__video-wrapper">
               <iframe
-                src="https://www.youtube.com/embed/LgT3YFn8nQY?autoplay=0&mute=1&controls=1&modestbranding=1&rel=0"
+                src="https://rutube.ru/play/embed/028b038303cdb20f6d5dc703492fce1c/?autoplay=1&muted=1"
                 title="Как мы работаем с поставщиками в Китае"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="clipboard-write; autoplay"
                 allowFullScreen
                 frameBorder="0"
               ></iframe>
@@ -77,9 +78,9 @@ function Hero() {
           <div className="hero__video-card">
             <div className="hero__video-wrapper">
               <iframe
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&mute=1&controls=1&modestbranding=1&rel=0"
+                src="https://rutube.ru/play/embed/1307c86aa8876ab6197877d4c226ad9c/?autoplay=1&muted=1"
                 title="Обзор логистики из Китая"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="clipboard-write; autoplay"
                 allowFullScreen
                 frameBorder="0"
               ></iframe>
@@ -92,13 +93,9 @@ function Hero() {
         </div>
       </div>
 
-      {/* Волна-разделитель */}
       <div className="hero__wave">
         <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-          <path
-            d="M0,60 C360,120 720,0 1440,60 L1440,120 L0,120 Z"
-            fill="#ffffff"
-          />
+          <path d="M0,60 C360,120 720,0 1440,60 L1440,120 L0,120 Z" fill="#ffffff" />
         </svg>
       </div>
     </section>

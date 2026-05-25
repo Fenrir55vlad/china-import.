@@ -121,7 +121,7 @@
 .leasing__media {
   display: flex;
   justify-content: center;
-  margin-top: 10px;   /* было 20px, уменьшено для подъёма фото */
+  margin-top: 10px;
 }
 
 .leasing__image-wrapper {
@@ -162,7 +162,6 @@
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* Адаптивность */
 @media (max-width: 900px) {
   .leasing__body {
     grid-template-columns: 1fr;
