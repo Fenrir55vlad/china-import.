@@ -3,6 +3,7 @@ import './Navbar.css';
 
 const navLinks = [
   { id: 'hero', label: 'Главная' },
+  { id: 'leasing', label: 'Лизинг' },
   { id: 'catalog', label: 'Каталог' },
   { id: 'partners', label: 'Партнеры' },
   { id: 'about', label: 'О компании' },
