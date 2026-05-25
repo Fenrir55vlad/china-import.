@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Leasing from './components/Leasing';   // новый раздел
 import Catalog from './components/Catalog';
 import Partners from './components/Partners';
 import About from './components/About';
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <Leasing />   {/* сразу после героя */}
         <Catalog />
         <Partners />
         <About />
