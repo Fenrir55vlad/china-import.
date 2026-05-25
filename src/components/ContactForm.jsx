@@ -3,9 +3,9 @@ import emailjs from '@emailjs/browser';
 import './ContactForm.css';
 
 // ⚠️ Замени эти ключи после регистрации на https://www.emailjs.com/
-const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';        // получи в Account → API Keys
-const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';        // создай Email Service (Gmail)
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';      // создай Email Template
+const EMAILJS_PUBLIC_KEY = 'JVUnsIBU2Vu-SFNcC';        // получи в Account → API Keys
+const EMAILJS_SERVICE_ID = 'service_znfjp6j';        // создай Email Service (Gmail)
+const EMAILJS_TEMPLATE_ID = 'template_yh488cn';      // создай Email Template
 
 function ContactForm() {
   const formRef = useRef();
