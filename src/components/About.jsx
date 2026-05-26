@@ -18,7 +18,7 @@ function About() {
           </div>
           <div className="about__text">
             <h2 className="section-title" style={{ textAlign: 'left' }}>
-              <span className="accent-text">ChinaImportPro</span> — ваш надёжный партнёр по поставкам из Китая
+              <span className="accent-text">PROимпорт</span> — ваш надёжный партнёр по поставкам из Китая
             </h2>
             <p className="about__paragraph">
               Мы не просто посредники. Мы — команда экспертов с офисами в Москве, Гуанчжоу и Иу,

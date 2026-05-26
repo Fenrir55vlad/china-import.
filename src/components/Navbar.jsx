@@ -15,9 +15,7 @@ function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -34,7 +32,8 @@ function Navbar() {
         <div className="navbar__logo" onClick={() => scrollTo('hero')}>
           <span className="navbar__logo-icon">🚢</span>
           <span className="navbar__logo-text">
-            China<span className="accent-text">Import</span>Pro
+            <span className="logo-pro">PRO</span>
+            <span className="logo-import">импорт</span>
           </span>
         </div>
 

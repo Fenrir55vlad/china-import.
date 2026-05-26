@@ -56,6 +56,14 @@
   font-size: 0.85rem;
 }
 
+.logo-pro {
+  color: #ffffff;
+  font-weight: 800;
+}
+.logo-import {
+  color: var(--color-accent);
+}
+
 @media (max-width: 768px) {
   .footer__content {
     grid-template-columns: 1fr;

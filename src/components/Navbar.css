@@ -40,12 +40,23 @@
 .navbar__logo-text {
   font-size: 1.4rem;
   font-weight: 800;
-  color: var(--color-white);
-  transition: color var(--transition);
+  display: flex;
+  align-items: center;
 }
 
-.navbar--scrolled .navbar__logo-text {
-  color: var(--color-dark);
+/* PRO – белый на прозрачном фоне, чёрный при скролле */
+.logo-pro {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.navbar--scrolled .logo-pro {
+  color: #111827;
+}
+
+/* импорт – оранжевый */
+.logo-import {
+  color: var(--color-accent);
 }
 
 .navbar__links {
@@ -116,7 +127,6 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Мобильная версия */
 @media (max-width: 768px) {
   .navbar__burger {
     display: flex;

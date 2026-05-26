@@ -6,14 +6,17 @@ function Footer() {
       <div className="container">
         <div className="footer__content">
           <div className="footer__brand">
-            <span className="footer__logo">🚢 ChinaImportPro</span>
+            <span className="footer__logo">
+              🚢 <span className="logo-pro">PRO</span>
+              <span className="logo-import">импорт</span>
+            </span>
             <p className="footer__desc">
               Профессиональные поставки товаров, деталей и комплектующих из Китая для вашего бизнеса.
             </p>
           </div>
           <div className="footer__links-col">
             <h4>Навигация</h4>
-            {['Главная', 'Каталог', 'Партнеры', 'О компании'].map((l) => (
+            {['Главная', 'Лизинг', 'Каталог', 'Партнеры', 'О компании'].map((l) => (
               <a
                 key={l}
                 href={`#${l === 'Главная' ? 'hero' : l === 'О компании' ? 'about' : l.toLowerCase()}`}
@@ -30,7 +33,7 @@ function Footer() {
           </div>
         </div>
         <div className="footer__bottom">
-          <span>© {new Date().getFullYear()} ChinaImportPro. Все права защищены.</span>
+          <span>© {new Date().getFullYear()} PROимпорт. Все права защищены.</span>
         </div>
       </div>
     </footer>
